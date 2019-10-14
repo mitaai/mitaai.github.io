@@ -285,6 +285,24 @@
   }
 }
 
+// bio-post
+
+.bio-post {
+	@extend %clearfix;
+
+	img {
+		max-width: 200px;
+		float: left;
+		margin-right: $spacing-unit / 2;
+		margin-bottom: $spacing-unit;
+
+        @include media-query($on-palm) {
+			float: none;
+			margin-bottom: 0px;
+		}
+	}
+}
+
 
 
 
