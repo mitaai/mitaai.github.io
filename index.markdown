@@ -3,7 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: Active Archives Initiative
 ---
 
-Hello World
+![The archive beneath the Berlinische Galerie](/assets/images/2600.jpg "Active Archives Initiative")
