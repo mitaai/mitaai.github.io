@@ -5,4 +5,4 @@
 layout: home
 ---
 
-![The archive beneath the Berlinische Galerie](/assets/images/2600.jpg "Active Archives Initiative")
+![The archive beneath the Berlinische Galerie](/assets/images/2600.JPG "Active Archives Initiative")
