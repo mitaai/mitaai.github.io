@@ -36,6 +36,17 @@ sass:
 
 prose:
   rooturl: '_posts'
+  metadata:
+    _posts:
+      - name: "category"
+        field:
+          element: "select"
+          value: "blog"
+          options:
+            - name: "blog"
+              value: "Blog"
+            - name: "people"
+              value: "People"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
