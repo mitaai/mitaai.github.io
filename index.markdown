@@ -5,7 +5,7 @@
 layout: home
 ---
 
-![The archive beneath the Berlinische Galerie](/assets/images/2600.JPG "Active Archives Initiative")
+![The archive at the Haus der Kunst in Munich](/assets/images/header.JPG "Active Archives Initiative")
 
 # Reimagining digital archives as platforms for creative engagement
 
