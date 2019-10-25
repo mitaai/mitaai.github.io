@@ -1,6 +1,6 @@
 ---
 category: projects
-published: false
+published: true
 ---
 # Annotation Studio
 
