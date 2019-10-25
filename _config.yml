@@ -39,15 +39,22 @@ prose:
   metadata:
     _posts:
       - name: "category"
-        label: "Category"
         field:
+          label: "Category"
           element: "select"
-          value: "blog"
           options:
             - name: "Blog"
               value: "blog"
             - name: "People"
               value: "blog"
+    _posts/projects:
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "projects"
+      - name: "collaborators"
+        field:
+          element: "textarea"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
