@@ -18,7 +18,7 @@ Annotation Studio offers a unique combination of easy-to-use features:
 ### Technical Description
 Annotation Studio currently consists of two components: a web application written in Ruby on Rails and Backbone.js, to manage media documents, users and groups, and a RESTful web API written in Node.js and MongoDB, to store users’ annotations and to enable reuse, visualization, and analysis of those annotations.
 
-**Project site**: annotationstudio.org
+**Project site**: [annotationstudio.org](https://www.annotationstudio.org/ "annotationstudio.org")
 
 **White Paper (NEH Start-up Grant – 2013)**: [Annotation Studio: Bringing a time-honored learning practice into the digital age](/assets/uploads/AS-NEHWhitePaper-6-25-complete1.pdf "Annotation Studio: Bringing a time-honored learning practice into the digital age")
 
