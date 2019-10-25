@@ -42,11 +42,12 @@ prose:
         field:
           label: "Category"
           element: "select"
+          value: "blog"
           options:
             - name: "Blog"
               value: "blog"
             - name: "People"
-              value: "blog"
+              value: "people"
     _posts/projects:
       - name: "category"
         field:
