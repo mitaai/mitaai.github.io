@@ -20,7 +20,7 @@ Annotation Studio currently consists of two components: a web application writte
 
 **Project site**: annotationstudio.org
 
-**White Paper (NEH Start-up Grant – 2013)**: [Annotation Studio: Bringing a time-honored learning practice into the digital age](/assets/uploads/AS-NEHWhitePaper-6-25-complete1 "Annotation Studio: Bringing a time-honored learning practice into the digital age")
+**White Paper (NEH Start-up Grant – 2013)**: [Annotation Studio: Bringing a time-honored learning practice into the digital age](/assets/uploads/AS-NEHWhitePaper-6-25-complete1.pdf "Annotation Studio: Bringing a time-honored learning practice into the digital age")
 
 **White Paper (NEH Implementation Grant – 2016)**: [Annotation Studio White Paper 2016](/assets/uploads/NEHWhitePaper2016_AnnotationStudio.pdf "Annotation Studio White Paper 2016")
 
