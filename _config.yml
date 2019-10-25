@@ -53,18 +53,6 @@ prose:
         field:
           element: "hidden"
           value: "projects"
-      - name: "role"
-        field:
-          label: "HyperStudio Role"
-          element: "textarea"
-      - name: "collaborators"
-        field:
-          label: "Collaborators"
-          element: "textarea"
-      - name: "funding"
-        field:
-          label: "Funding"
-          element: "textarea"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
