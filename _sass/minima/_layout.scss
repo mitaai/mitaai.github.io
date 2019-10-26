@@ -311,6 +311,7 @@
 
 	img {
 		max-width: 200px;
+  	min-width: 200px;
 		float: right;
 		margin-left: $spacing-unit / 2;
 		margin-bottom: $spacing-unit;
