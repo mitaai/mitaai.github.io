@@ -11,13 +11,18 @@ layout: default
     {{ content }}
 
     {%- if site.categories.projects.size > 0 -%}
+      {% assign proj_sorted = site.categories.projects | sort: 'display-rank', 'last' %}
       <ul class="post-list">
-        {%- for post in site.categories.projects -%}
-        <li class="projects-post">
-      	<article class="post-content">
+        {%- for post in proj_sorted -%}
+        <li class="projects-post" name="{{post.id}}">
+        	<article class="post-content" id="{{post.id}}-excerpt" style="display:block;">
+          	{{ post.excerpt }}
+        	</article>
+        	<article class="post-content" id="{{post.id}}-full" style="display:none;">
           	{{ post.content }}
         	</article>
-
+          <label for="{{post.id}}" class="readmore">Read More</label>
+          <input type="checkbox" id="{{post.id}}" class="readmore">
         </li>
         {%- endfor -%}
       </ul>
@@ -27,3 +32,23 @@ layout: default
   </div>
 
 </article>
+<script type="text/javascript">
+  var checkboxes = document.querySelectorAll("input[type=checkbox]");
+
+  for(const checkbox of checkboxes){
+    checkbox.addEventListener( 'change', function() {
+        var excerpt = document.getElementById(this.id + "-excerpt");
+        var full = document.getElementById(this.id + "-full");
+        var label = document.querySelector("li[name='" + this.id + "'] label");
+        if(this.checked) {
+          excerpt.style.display = "none";
+          full.style.display = "block";
+          label.innerHTML = "Collapse";
+        } else {
+          full.style.display = "none";
+          excerpt.style.display = "block";
+          label.innerHTML = "Read More";
+        }
+    })
+  };
+</script>
