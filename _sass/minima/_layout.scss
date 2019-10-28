@@ -130,6 +130,7 @@
 .site-footer {
   border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
+  background-color:$footer-bg-color;
 }
 
 .footer-heading {
@@ -310,17 +311,25 @@
 	@extend %clearfix;
 
 	img {
+    display:block;
 		max-width: 200px;
   	min-width: 200px;
 		float: right;
 		margin-left: $spacing-unit / 2;
 		margin-bottom: $spacing-unit;
+    @include media-query($on-palm) {
+			display:none;
 
-        @include media-query($on-palm) {
-			float: none;
-			margin-bottom: 0px;
 		}
 	}
+}
+
+.post-list hr {
+  margin-bottom: $spacing-unit/2;
+  border: 0.5px solid #ccc;
+  &:last-child {
+    display: none;
+  }
 }
 
 /**
