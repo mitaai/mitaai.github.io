@@ -7,6 +7,8 @@ display-rank: 1
 
 ![Marginalia on a document](/assets/images/marginalia.jpg) Annotation Studio is an open source web application that engages students in close reading and textual interpretation. It integrates a powerful set of tools with an interface that makes using those tools intuitive for undergraduates. Building on students’ new media literacies, Annotation Studio develops traditional humanistic skills including close reading, persuasive writing, and critical thinking. Features of the initial Annotation Studio implementation, supported by an NEH Start-Up Grant, include aligned multi-media annotation of written texts, user-defined sharing of annotations, and grouping of annotations by self-defined tags to support interpretation and argument development. By enabling the user to tag texts using folksonomies rather than TEI, Annotation Studio allows students to act as “novice scholars,” discovering how literary texts can be opened up through the exploration of sources, influences, editions, and adaptations. In other words, Annotation Studio’s tools and workspaces help students hone skills used by professional humanists.
 
+**Info site**: [annotationstudio.org](https://www.annotationstudio.org/ "annotationstudio.org")
+
 **Application**: [Annotation Studio](https://app.annotationstudio.org/ "Annotation Studio")
 
 <!--more-->
@@ -23,7 +25,6 @@ Annotation Studio offers a unique combination of easy-to-use features:
 #### Technical Description
 Annotation Studio currently consists of two components: a web application written in Ruby on Rails and Backbone.js, to manage media documents, users and groups, and a RESTful web API written in Node.js and MongoDB, to store users’ annotations and to enable reuse, visualization, and analysis of those annotations.
 
-**Project site**: [annotationstudio.org](https://www.annotationstudio.org/ "annotationstudio.org")
 
 **White Paper (NEH Start-up Grant – 2013)**: [Annotation Studio: Bringing a time-honored learning practice into the digital age](/assets/uploads/AS-NEHWhitePaper-6-25-complete1.pdf "Annotation Studio: Bringing a time-honored learning practice into the digital age")
 
