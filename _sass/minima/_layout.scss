@@ -241,6 +241,16 @@
 
 
 /**
+ * Newsletter
+ */
+.newsletter img {
+	max-width: 200px;
+	float: left;
+	margin-right: $spacing-unit / 2;
+	margin-bottom: $spacing-unit;
+}
+
+/**
  * Posts
  */
 .post-header {
