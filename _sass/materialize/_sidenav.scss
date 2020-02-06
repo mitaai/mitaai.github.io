@@ -202,23 +202,33 @@
 }
 
 .btn-close{
-
+  position:absolute;
+  top:$spacing-unit/2;
+  right:$spacing-unit/2;
   color: black;
   a{
     color: black;
+    transition: all 0.25s ease;
+    &:hover{
+      color:$aai-color;
+    }
   }
 }
 
 ul.sidenav a {
   font-size: 16px;
+  text-decoration: none;
+  font-weight:normal;
     span{
     transition: all 0.25s ease;
     color: black;
-    text-decoration: none;
     background-color: white;
+    box-shadow: -5px 0 0 white, 5px 0 0 white;
+    padding: 2px 0 2px 0;
   }
 
-&:hover span { 
-  background-color: $aai-color;
-}
+  &:hover span { 
+    background-color: $aai-color;
+    box-shadow: -5px 0 0 $aai-color, 5px 0 0 $aai-color;
+  }
 }
