@@ -20,6 +20,7 @@
     <ul id="slide-out" class="sidenav">
       <span class="btn-close"> <a class="sidenav-close" href="#!"><i class="material-icons md-36">close</i></a></span>
       <li><div class="divider"></div></li>
+      <li><a href="/" class="side-links">Home</a></li>
       {%- for path in page_paths -%}
         {%- assign my_page = site.pages | where: "path", path | first -%}
         {%- if my_page.title -%}

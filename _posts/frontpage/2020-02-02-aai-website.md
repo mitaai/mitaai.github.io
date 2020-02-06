@@ -1,6 +1,7 @@
 ---
 category: frontpage
-title: New Active Archives Iniative Website Launch
+layout: post-page 
+title: New Active Archives Initiative Website Launch
 date: 2020-02-02
 ---
 
@@ -8,4 +9,4 @@ Welcome to the new Active Archives Initiative website. Over the past several mon
 
 <!--more-->
 
-We are still working out the kinks with the new design and layout. If you have questions about the website, or the Active Archives Initiative in general, please do not hesitate to reach us at aai-info@mit.edu.
+We are still working out the kinks with the new design and layout. If you have questions about the website, or the Active Archives Initiative in general, please do not hesitate to reach us at <a href="mailto:aai-info@mit.edu">aai-info@mit.edu</a>.

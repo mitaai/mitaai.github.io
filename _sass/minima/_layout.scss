@@ -1,5 +1,3 @@
-
-
 /**
  * Site header
  */
@@ -16,7 +14,7 @@
 
   // Positioning context for the mobile navigation icon
   position: relative;
-  .wrapper{
+  .wrapper {
     position: relative;
   }
 }
@@ -43,58 +41,14 @@
   font-size: 36px !important;
   height: 36px !important;
   width: 36px !important;
-  }
+}
 
 .site-nav {
   position: absolute;
   top: 12px;
-  color:black;
+  color: black;
   right: $spacing-unit;
   text-align: right;
-/*   .menu-icon {
-    float: right;
-    width: 36px;
-    height: 26px;
-    line-height: 0;
-    padding-top: 10px;
-    text-align: center;
-
-    > svg path {
-      fill: $grey-color-dark;
-    }
-  }
-
-  label[for="nav-trigger"] {
-    display: block;
-    float: right;
-    width: 36px;
-    height: 36px;
-    z-index: 2;
-    cursor: pointer;
-  }
-
-  input ~ .trigger {
-    clear: both;
-    visibility: hidden;
-  }
-
-  input:checked ~ .trigger {
-    visibility: visible;
-    transition: visibility 0s, opacity 0.5s linear;
-  }
-
-  .page-link {
-    color: $text-color;
-    line-height: $base-line-height;
-    display: block;
-    padding: 5px 10px;
-
-    // Gaps between nav items, but not on the last one
-    &:not(:last-child) {
-      margin-right: 0;
-    }
-    margin-left: 20px;
-  } */
 }
 
 /**
@@ -137,9 +91,7 @@
   width: -webkit-calc(50% - (#{$spacing-unit} / 2));
   width: calc(50% - (#{$spacing-unit} / 2));
   height: 100% !important;
-
 }
-
 
 /**
  * Page content
@@ -148,10 +100,53 @@
   padding: 0 0;
   flex-flow: column;
   flex: 1 0 auto;
+  padding-top: $spacing-unit;
   .home {
     margin: 0 0 0 0;
     flex: 2;
     overflow: auto;
+  } 
+  .post-article {
+    padding: $spacing-unit/2;
+    background-color: white;
+    border: 1px solid $grey-border;
+    .content {
+      padding: 0 $spacing-unit/2 0 $spacing-unit/2;
+    }
+    .post-date {
+      font-size: 12px;
+      color: #808080;
+      padding-bottom: 15px;
+    }
+    a {
+      padding: 2px 0 2px 0;
+      font-size: 16px;
+      color: black;
+      text-decoration: none;
+      box-shadow: -2px 0 0 $aai-color, 2px 0 0 $aai-color;
+      background-color: $aai-color;
+      transition: all 0.25s ease;
+    }
+    a:hover {
+      color: white;
+      box-shadow: -2px 0 0 $aai-color, 2px 0 0 $aai-color;
+    }
+  }
+}
+
+#breadcrumbs {
+  padding-bottom: $spacing-unit/2;
+  margin-top: -$spacing-unit/2;
+  font-size: 16px;
+  a {
+    color: black;
+    padding: 2px 0 2px 0;
+    background-color: transparent;
+    transition: all 0.25s ease;
+  }
+  a:hover {
+    background-color: $aai-color;
+    box-shadow: -5px 0 0 $aai-color, 5px 0 0 $aai-color;
   }
 }
 
@@ -282,13 +277,11 @@
   }
 }
 
-
 /**
  * Grid helpers
  */
 .home {
   display: grid;
-  padding-top: $spacing-unit;
   grid-gap: $spacing-unit/2;
   grid-template-areas:
     "headerimg"
@@ -312,8 +305,9 @@
 .home-news {
   grid-area: news;
   background-color: white;
+  margin-top: $spacing-unit/2;
   padding: $spacing-unit/4;
-  border: 1px solid #e0e0e0;
+  border: 1px solid $grey-border;
   h1 {
     font-size: 20px;
   }
@@ -344,17 +338,17 @@
 .home-grid {
   margin-top: $spacing-unit/2;
   .home-thumb {
-    border: 1px solid #e0e0e0;
+    border: 1px solid $grey-border;
     background-color: white;
     position: relative;
     transition: all 0.25s ease;
     overflow: hidden;
-    max-height: 200px; /* new */
+    height: 140px;
     img {
       padding: 0;
       width: 100%;
+      min-height: 100%;
       vertical-align: middle;
-      object-fit: cover;
     }
     .thumb-overlay {
       position: absolute;
@@ -372,7 +366,7 @@
       transition: all 0.25s ease;
       font-size: 12px;
     }
-    .thumb-excerpt p{
+    .thumb-excerpt p {
       color: #808080;
       text-decoration: none;
       font-size: 12px;
@@ -382,10 +376,9 @@
       max-width: 88%;
       display: -webkit-box;
       -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;  
+      -webkit-box-orient: vertical;
       overflow: hidden;
     }
-    
   }
   .home-thumb:hover {
     border: 1px solid $aai-color;
@@ -411,8 +404,9 @@
   .home-grid {
     // 6 most recent as 3w 2h grid
     grid-template-columns: 1fr 1fr 1fr;
-    .home-thumb{
-      .thumb-excerpt p{
+    .home-thumb {
+      height: 200px;
+      .thumb-excerpt p {
         -webkit-line-clamp: 4;
         font-size: 14px;
       }
@@ -428,6 +422,7 @@
     }
   }
   .home-news {
+    margin-top: 0;
     h1 {
       font-size: 28px;
     }
