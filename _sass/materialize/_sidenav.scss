@@ -228,3 +228,13 @@ ul.sidenav a.side-links {
     background-color: $aai-color;
   }
 }
+
+.sidenav-trigger{
+
+  transition: all 0.25s ease;
+  color: black;
+
+  &:hover  { 
+    color: white;
+  }
+}
