@@ -215,20 +215,16 @@
   }
 }
 
-ul.sidenav a {
+ul.sidenav a.side-links {
   font-size: 16px;
   text-decoration: none;
   font-weight:normal;
-    span{
-    transition: all 0.25s ease;
-    color: black;
-    background-color: white;
-    box-shadow: -5px 0 0 white, 5px 0 0 white;
-    padding: 2px 0 2px 0;
-  }
+  transition: all 0.25s ease;
+  color: black;
+  background-color: white;
 
-  &:hover span { 
+
+  &:hover  { 
     background-color: $aai-color;
-    box-shadow: -5px 0 0 $aai-color, 5px 0 0 $aai-color;
   }
 }
