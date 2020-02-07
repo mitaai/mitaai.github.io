@@ -7,33 +7,42 @@ layout: default
     <span class="header-label">Reimagining digital archives as platforms for creative engagement</span>
   </div>
   <aside class="home-news">
-    <h1>News</h1>
-    <ul class="news-list">
-      <li class="news-item">
-        <p class="news-date">January 1, 2020</p>
-        <a class="news-link" href="#">Link to a news item</a>
-      </li>
-    </ul>
-  </aside>
-  <div class="home-grid">
-    {%- if site.categories.frontpage.size > 0 -%}
-      {% assign front_sorted = site.categories.frontpage | sort: 'date' | reverse %}
-      {%- for post in front_sorted limit:8 -%}
-        <div class="home-thumb">
-          <a href="{{post.url}}">
-          {%- if post.thumbnail -%}
-            <img src="{{ post.thumbnail }}" />
-          {%- else -%}
-            <span class="thumb-excerpt">{{post.excerpt}}</span>
-          {%- endif -%}
-          <div class="thumb-overlay">
-            <span class="thumb-title">{{post.title}}</span>
-          </div>
-        </a>
+    <div class="home-news-inner">
+        <h1>News</h1>
+        <ul class="news-list">
+            <li class="news-item">
+                <p class="news-date">January 1, 2020</p>
+                <a class="news-link" href="#">Link to a news item</a>
+            </li>
+            <li class="news-item">
+                <p class="news-date">January 1, 2020</p>
+                <a class="news-link" href="#">Link to a news item</a>
+            </li>
+        </ul>
+        <div class="newsletter-ext"><a href="/newsletter">Read more in the Active Archives Insights newsletter</a>
         </div>
-      {%- endfor -%}
-    {%- endif -%}
-  </div>
+    </div>
+  </aside>
+</div>
+
+<div class="home-grid">
+  {%- if site.categories.frontpage.size > 0 -%}
+    {% assign front_sorted = site.categories.frontpage | sort: 'date' | reverse %}
+    {%- for post in front_sorted limit:8 -%}
+      <div class="home-thumb">
+        <a href="{{post.url}}">
+        {%- if post.thumbnail -%}
+          <img src="{{ post.thumbnail }}" />
+        {%- else -%}
+          <span class="thumb-excerpt">{{post.excerpt}}</span>
+        {%- endif -%}
+        <div class="thumb-overlay">
+          <span class="thumb-title">{{post.title}}</span>
+        </div>
+      </a>
+      </div>
+    {%- endfor -%}
+  {%- endif -%}
 </div>
 
 <script type="text/javascript">
