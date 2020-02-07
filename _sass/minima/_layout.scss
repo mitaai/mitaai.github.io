@@ -232,6 +232,17 @@
   }
 }
 
+.post-image{
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.image-caption{
+  padding: $spacing-unit/2;
+  font-size: 14px;
+  font-style: italic;
+}
+
 // bio-post
 
 .bio-post {

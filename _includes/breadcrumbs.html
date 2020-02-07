@@ -5,6 +5,10 @@
         / <a href="/aai-news">AAI News</a>
     {% elsif page.categories contains 'projects' %}
         / <a href="/projects">Projects</a>
+    {% elsif page.categories contains 'research' %}
+        / <a href="/research">Research</a>
+    {% elsif page.categories contains 'people' %}
+        / <a href="/team">Team</a>
     {% endif %}
     / {{ page.title }}
 </div>
