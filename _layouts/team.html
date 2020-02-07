@@ -4,25 +4,46 @@ layout: default
 
 {%- include breadcrumbs.html -%}
 
+<div class="team-header"><span>Current</span></div>
 <div class="home-grid">
   {{ content }}
-
   {%- if site.categories.people.size > 0 -%}
   {% assign people_sorted = site.categories.people | sort: 'display-rank', 'last' %}
-  {%- for post in people_sorted -%}
-  <div class="home-thumb">
-    <a href="{{post.url}}">
-      {%- if post.thumbnail -%}
-        <img src="{{ post.thumbnail }}" />
-      {%- else -%}
-        <span class="thumb-excerpt">{{post.excerpt}}</span>
-      {%- endif -%}
-      <div class="thumb-overlay">
-        <span class="thumb-title">{{post.title}}</span>
+    {%- for post in people_sorted -%}
+      <div class="home-thumb">
+        <a href="{{post.url}}">
+          {%- if post.thumbnail -%}
+            <img src="{{ post.thumbnail }}" />
+          {%- else -%}
+            <span class="thumb-excerpt">{{post.excerpt}}</span>
+          {%- endif -%}
+          <div class="thumb-overlay">
+            <span class="thumb-title">{{post.title}}</span>
+          </div>
+        </a>
       </div>
-    </a>
-  </div>
-  {%- endfor -%}
+    {%- endfor -%}
+  {%- endif -%}
 </div>
 
-{%- endif -%}
+
+<div class="team-header"><span>Former</span></div>
+<div class="home-grid">
+  {%- if site.categories.former-people.size > 0 -%}
+  {% assign people_sorted = site.categories.former-people | sort: 'display-rank', 'last' %}
+    {%- for post in people_sorted -%}
+      <div class="home-thumb">
+        <a href="{{post.url}}">
+          {%- if post.thumbnail -%}
+            <img src="{{ post.thumbnail }}" />
+          {%- else -%}
+            <span class="thumb-excerpt">{{post.excerpt}}</span>
+          {%- endif -%}
+          <div class="thumb-overlay">
+            <span class="thumb-title">{{post.title}}</span>
+          </div>
+        </a>
+      </div>
+    {%- endfor -%}
+  {%- endif -%}
+</div>
