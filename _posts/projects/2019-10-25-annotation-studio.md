@@ -6,6 +6,8 @@ published: true
 display-rank: 1
 ---
 
+**Read about our [recent launch of Annotation Studio 2.5](/2020-01-31-as2-5)!**
+
 Annotation Studio is an open source web application that engages students in close reading and textual interpretation. It integrates a powerful set of tools with an interface that makes using those tools intuitive for undergraduates. Building on students’ new media literacies, Annotation Studio develops traditional humanistic skills including close reading, persuasive writing, and critical thinking. Features of the initial Annotation Studio implementation, supported by an NEH Start-Up Grant, include aligned multi-media annotation of written texts, user-defined sharing of annotations, and grouping of annotations by self-defined tags to support interpretation and argument development. By enabling the user to tag texts using folksonomies rather than TEI, Annotation Studio allows students to act as “novice scholars,” discovering how literary texts can be opened up through the exploration of sources, influences, editions, and adaptations. In other words, Annotation Studio’s tools and workspaces help students hone skills used by professional humanists.
 
 **Info site**: [annotationstudio.org](https://www.annotationstudio.org/ "annotationstudio.org")
