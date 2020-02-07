@@ -8,16 +8,17 @@ layout: default
   </div>
   <aside class="home-news">
     <div class="home-news-inner">
-        <h1>News</h1>
+        <h2>News</h2>
         <ul class="news-list">
-            <li class="news-item">
-                <p class="news-date">January 1, 2020</p>
-                <a class="news-link" href="#">Link to a news item</a>
-            </li>
-            <li class="news-item">
-                <p class="news-date">January 1, 2020</p>
-                <a class="news-link" href="#">Link to a news item</a>
-            </li>
+          {% assign news_sorted = site.data.front-news | sort: 'date' | reverse  %}
+            {%- for item in news_sorted -%}
+              <li class="news-item">
+                  <p class="news-date">{{ item.date | date: "%B %-d, %Y" }}</p>
+                  <a class="news-link" href="{{ item.url }}">{{ item.title }}</a> {%- if item.url contains 'http' -%}
+                  &nbsp;<i class="material-icons">open_in_new</i>
+                  {%- endif -%}
+              </li>
+            {%- endfor -%}
         </ul>
         <div class="newsletter-ext"><a href="/newsletter">Read more in the Active Archives Insights newsletter</a>
         </div>
