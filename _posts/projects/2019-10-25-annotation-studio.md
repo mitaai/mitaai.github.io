@@ -4,6 +4,7 @@ layout: post-page
 thumbnail: /assets/images/marginalia.jpg
 published: true
 display-rank: 1
+date: 2020-02-07
 ---
 
 **Read about our [recent launch of Annotation Studio 2.5](/2020-01-31-as2-5)!**
