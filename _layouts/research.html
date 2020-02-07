@@ -7,9 +7,9 @@ layout: default
 <div class="home-grid">
   {{ content }}
 
-  {%- if site.categories.projects.size > 0 -%}
-  {% assign proj_sorted = site.categories.projects | sort: 'display-rank', 'last' %}
-  {%- for post in proj_sorted -%}
+  {%- if site.categories.research.size > 0 -%}
+  {% assign research_sorted = site.categories.research | sort: 'date' | reverse %}
+  {%- for post in research_sorted -%}
   <div class="home-thumb">
     <a href="{{post.url}}">
       {%- if post.thumbnail -%}

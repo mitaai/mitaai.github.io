@@ -3,10 +3,49 @@ layout: default
 ---
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
-  {{ content }}
-
+  <div class="header-area"><img id="header" src="/assets/images/aai-header.jpg" />
+    <span class="header-label">Reimagining digital archives as platforms for creative engagement</span>
+  </div>
+  <aside class="home-news">
+    <div class="home-news-inner">
+        <h2>News</h2>
+        <ul class="news-list">
+          {% assign news_sorted = site.data.front-news | sort: 'date' | reverse  %}
+            {%- for item in news_sorted -%}
+              <li class="news-item">
+                  <p class="news-date">{{ item.date | date: "%B %-d, %Y" }}</p>
+                  <a class="news-link" href="{{ item.url }}">{{ item.title }}</a> {%- if item.url contains 'http' -%}
+                  &nbsp;<i class="material-icons">open_in_new</i>
+                  {%- endif -%}
+              </li>
+            {%- endfor -%}
+        </ul>
+        <div class="newsletter-ext"><a href="/newsletter">Read more in the Active Archives Insights newsletter</a>
+        </div>
+    </div>
+  </aside>
 </div>
+
+<div class="home-grid">
+  {%- if site.categories.frontpage.size > 0 -%}
+    {% assign front_sorted = site.categories.frontpage | sort: 'date' | reverse %}
+    {%- for post in front_sorted limit:8 -%}
+      <div class="home-thumb">
+        <a href="{{post.url}}">
+        {%- if post.thumbnail -%}
+          <img src="{{ post.thumbnail }}" />
+        {%- else -%}
+          <span class="thumb-excerpt">{{post.excerpt}}</span>
+        {%- endif -%}
+        <div class="thumb-overlay">
+          <span class="thumb-title">{{post.title}}</span>
+        </div>
+      </a>
+      </div>
+    {%- endfor -%}
+  {%- endif -%}
+</div>
+
+<script type="text/javascript">
+// Empty script for animations
+</script>

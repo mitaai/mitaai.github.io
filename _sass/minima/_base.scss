@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
 /**
  * Links
  */
-a {
+footer a {
   color: $brand-color;
   text-decoration: none;
 
@@ -113,7 +113,6 @@ a {
 
   &:hover {
     color: $text-color;
-    text-decoration: underline;
   }
 
   .social-media-list &:hover {
@@ -133,10 +132,6 @@ blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
   padding-left: $spacing-unit / 2;
-  @include relative-font-size(1.125);
-  letter-spacing: -1px;
-  font-style: italic;
-
   > :last-child {
     margin-bottom: 0;
   }
