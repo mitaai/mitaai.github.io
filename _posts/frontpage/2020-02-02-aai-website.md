@@ -1,5 +1,5 @@
 ---
-category: frontpage
+category: [frontpage, aai-news]
 layout: post-page 
 title: New Active Archives Initiative Website Launch
 date: 2020-02-02
