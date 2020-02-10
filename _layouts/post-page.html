@@ -12,7 +12,14 @@
         {%- include breadcrumbs.html -%}
         <div class="post-article">
           <h1>{{ page.title }}</h1>
-          <div class="post-date">Last updated: {{ page.date | date: "%B %-d, %Y" }}</div>
+          <div class="post-meta">
+            {%- if page.author -%}
+              Author: {{ page.author }}<br />
+            {%- endif -%}
+            {%- if page.date -%}
+              Last updated: {{ page.date | date: "%B %-d, %Y" }}
+            {%- endif -%}
+          </div>
           {%- if page.main-img -%}
             <div class="post-image"><img src="{{ page.main-img }}" alt="{{ page.img-caption }}"  /></div>
             {%- if page.img-caption -%}
