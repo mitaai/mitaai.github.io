@@ -54,7 +54,7 @@ prose:
         field:
           label: "Category"
           element: "multiselect"
-          help: "The category will determine what pages your post shows up on. If you want it to appear on the front page, add the 'show on front page grid' category in addition to the category your post belongs in."
+          help: "The category will determine what pages your post shows up on. <br />If you also want your post to appear on the front page, add the 'show on front page grid' category in addition to the category your post belongs in."
           placeholder: "Choose categories"
           options:
             - name: "Show on front page grid"
@@ -71,13 +71,13 @@ prose:
         field:
           element: "text"
           label: "Thumbnail (optional)"
-          help: "Put an image URL here to create a thumbnail. If you want to upload an image, upload it to the /assets/images directory. You can also use a remotely hosted image."
+          help: "Enter an image URL here to create a thumbnail. <br />Upload images to the /assets/images directory. You can also use a remotely hosted image."
           placeholder: "/assets/images/example.jpg"
       - name: "main-img"
         field:
           element: "text"
           label: "Header Image (optional)"
-          help: "Put an image URL here if you want this post to have a large header image. If you want to upload an image, upload it to the /assets/images directory. You can also use a remotely hosted image."
+          help: "Enter an image URL here if you want this post to have a large header image. <br />Upload images to the /assets/images directory. You can also use a remotely hosted image."
           placeholder: "/assets/images/example.jpg"
       - name: "img-caption"
         field:
@@ -89,7 +89,7 @@ prose:
           element: "select"
           label: "Image style (optional)"
           help: "Here you can choose an alternative style for your Header Image. Leave blank for default behavior."
-          placeholder: "default"
+          placeholder: ""
           options:
             - name: "Full image (uncropped, no resize)"
               value: "fill"
@@ -98,9 +98,9 @@ prose:
       - name: "img-pos"
         field:
           element: "select"
-          label: "Image position (optional)"
-          help: "Here you can choose an alternative positioning for your Header Image. Leave blank for default behavior."
-          placeholder: "default"
+          label: "Image crop position (optional)"
+          help: "Here you can choose an alternative cropping for your Header Image. Leave blank for default behavior."
+          placeholder: ""
           options:
             - name: "Middle"
               value: "middle"
