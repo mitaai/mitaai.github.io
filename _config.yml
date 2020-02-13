@@ -46,6 +46,11 @@ prose:
         field:
           element: "text"
           label: "Title"
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date (YYYY-MM-DD)"
+          value: CURRENT_DATETIME
       - name: "author"
         field:
           element: "text"
@@ -115,6 +120,11 @@ prose:
         field:
           element: "text"
           label: "Title"
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date (YYYY-MM-DD)"
+          value: CURRENT_DATETIME
       - name: "current"
         field:
           element: "checkbox"
