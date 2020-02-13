@@ -1,6 +1,5 @@
 ---
 layout: post-page
-published: true
 title: Kurt Fendt
 category: people
 thumbnail: '/assets/images/Kurt.jpg'
