@@ -89,6 +89,7 @@ prose:
           element: "select"
           label: "Image style (optional)"
           help: "Here you can choose an alternative style for your Header Image. Leave blank for default behavior."
+          placeholder: "default"
           options:
             - name: "Full image (uncropped, no resize)"
               value: "fill"
@@ -99,6 +100,7 @@ prose:
           element: "select"
           label: "Image position (optional)"
           help: "Here you can choose an alternative positioning for your Header Image. Leave blank for default behavior."
+          placeholder: "default"
           options:
             - name: "Middle"
               value: "middle"
