@@ -29,8 +29,10 @@
           <div class="content">
             {%- if page.category contains 'people' and page.thumbnail -%}
               <div class="bio-image"><img src="{{ page.thumbnail }}"/></div>
+              <div class="bio-content">{{ content }}</div>
+            {%- else -%}
+              {{ content }}
             {%- endif -%}
-            {{ content }}
           </div>
         </div>
       </div>
