@@ -112,7 +112,6 @@ prose:
           element: "checkbox"
           label: "Current team member?"
           value: "true"
-    _posts/team:
       - name: "display-rank"
         field:
           element: "number"
