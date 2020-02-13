@@ -106,6 +106,18 @@ prose:
               value: "middle"
             - name: "Bottom"
               value: "bottom"
+    _posts/team:
+      - name: "current"
+        field:
+          element: "checkbox"
+          label: "Current team member?"
+          value: "true"
+    _posts/team:
+      - name: "display-rank"
+        field:
+          element: "number"
+          label: "Display rank"
+          help: "Defines how this team member is sorted in the team page. Lower numbers appear before higher numbers."
 
 # Exclude from processing.
 # The following items will not be processed, by default.

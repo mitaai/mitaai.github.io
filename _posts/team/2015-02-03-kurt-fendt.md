@@ -2,6 +2,7 @@
 layout: post-page
 title: Kurt Fendt
 category: people
+current: true
 thumbnail: '/assets/images/Kurt.jpg'
 display-rank: 1
 ---

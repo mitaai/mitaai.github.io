@@ -2,6 +2,7 @@
 layout: post-page
 category: people
 title: Joshua Mbogo
+current: true
 thumbnail: /assets/images/josh-thumb.jpg
 display-rank: 3
 ---

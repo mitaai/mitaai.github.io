@@ -2,6 +2,7 @@
 layout: post-page
 category: people
 title: Ben Silverman
+current: true
 thumbnail: '/assets/images/ben-silverman.jpg'
 display-rank: 2
 ---

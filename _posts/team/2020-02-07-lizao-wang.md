@@ -1,6 +1,7 @@
 ---
 layout: post-page
-category: former-people
+category: people
+current: false
 title: Lizao Wang
 display-rank: 5
 ---
