@@ -93,6 +93,8 @@
     background-color: white;
     border: 1px solid $grey-border;
     .content {
+
+      display:flex;
       padding: 0 $spacing-unit/2 0 $spacing-unit/2;
     }
     .post-meta {
@@ -205,6 +207,17 @@
   img{
     object-fit: contain;
   }
+}
+
+.bio-image{
+  display:flex;
+  min-width: 200px;
+  max-height: 200px;
+  flex: 1;
+  img{
+    object-fit: contain;
+  }
+  margin: 0 $spacing-unit/2 $spacing-unit/2 0;
 }
 
 .image-caption {
