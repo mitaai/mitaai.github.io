@@ -106,7 +106,15 @@ prose:
               value: "middle"
             - name: "Bottom"
               value: "bottom"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post-page"
     _posts/team:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
       - name: "current"
         field:
           element: "checkbox"
@@ -117,6 +125,20 @@ prose:
           element: "number"
           label: "Display rank"
           help: "Defines how this team member is sorted in the team page. Lower numbers appear before higher numbers."
+      - name: "thumbnail"
+        field:
+          element: "text"
+          label: "Thumbnail (optional)"
+          help: "Enter an image URL here to create a thumbnail. <br />Upload images to the /assets/images directory. You can also use a remotely hosted image."
+          placeholder: "/assets/images/example.jpg"
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "people"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post-page"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
