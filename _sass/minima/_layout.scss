@@ -201,8 +201,10 @@
 }
 
 .post-image {
-  max-height: 400px;
-  overflow: hidden;
+  display:flex;
+  img{
+    object-fit: contain;
+  }
 }
 
 .image-caption {

@@ -36,4 +36,34 @@
 
   </body>
 
+  <style type="text/css">
+  .post-image{
+    {%- case page.img-style -%}
+    {%- when 'fill' -%}
+      width: 100%;
+    {%- else -%}
+      max-height: 400px;
+    {%- endcase -%}
+  }
+  .post-image img{
+    {%- case page.img-style -%}
+      {%- when 'fill' -%}
+          object-fit: contain;
+      {%- when 'shrink' -%}
+          object-fit: contain;
+      {%- else -%}
+          object-fit: cover;
+    {%- endcase -%}
+
+    {%- case page.img-pos -%}
+      {%- when 'middle' -%}
+        object-position: 50% 50%;
+      {%- when 'bottom' -%}
+        object-position: bottom;
+      {%- else -%}
+        object-position: top;
+    {%- endcase -%}
+  }
+  </style>
+
 </html>
