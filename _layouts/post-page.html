@@ -68,6 +68,13 @@
         object-position: top;
     {%- endcase -%}
   }
+
+  {%- if page.category contains 'people' and page.thumbnail -%}
+    .content{
+      display:flex;
+    }
+  {%- endif -%}
+
   </style>
 
 </html>
