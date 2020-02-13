@@ -39,23 +39,39 @@ excerpt_separator: <!--more-->
 
 prose:
   rooturl: '_posts'
+  media: '/assets/images'
   metadata:
     _posts:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author"
       - name: "category"
         field:
           label: "Category"
-          element: "select"
-          value: "blog"
+          element: "multiselect"
+          placeholder: "Choose categories"
           options:
-            - name: "Blog"
-              value: "blog"
+            - name: "Show on front page grid"
+              value: "frontpage"
+            - name: "AAI news"
+              value: "aai-news"
             - name: "People"
               value: "people"
-    _posts/projects:
-      - name: "category"
+            - name: "Projects"
+              value: "projects"
+            - name: "Research"
+              value: "research"
+      - name: "thumbnail"
         field:
-          element: "hidden"
-          value: "projects"
+          element: "text"
+          label: "Thumbnail"
+          help: "Put an image URL here to create a thumbnail. If you want to upload an image, upload it to the /assets/images directory."
+          placeholder: "/assets/images/example.jpg"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
