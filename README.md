@@ -57,8 +57,8 @@ profile page.
 
 ## News section
 
-To add or remove items from the News section, please edit the file `_data/front-news.yml`. Each entry must be in the following 
-format, with indentation:
+To add or remove items from the News section, please edit the file `_data/front-news.yml`. This file does not appear on Prose, 
+so you may use the GitHub built-in editor or a text editor of your choice. Each entry must be in the following format, with indentation:
 ```yml
 - title: Active Archives Initiative launches new website
   url: /2020-02-10-aai-website
